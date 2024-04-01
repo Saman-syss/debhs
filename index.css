@@ -626,6 +626,7 @@ width: 300%;}
     }s
     .header1{
         max-width: 100%;
+        width: fit-content;
     }
     .header1 h1{
         text-align: center;
