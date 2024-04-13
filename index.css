@@ -19,6 +19,9 @@
     left: 5px;
     width: 150px;
 }
+body{
+    background-color: #F8F8F8;
+}
 h1{
     font-family:'Libre Baskerville';
 }
@@ -73,7 +76,7 @@ nav{
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%,50%);
     text-align: center;
@@ -102,8 +105,8 @@ nav{
     cursor: pointer;
 }
 .btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #172554;
+    background: #172554;
     transition: 1s;
 }
 /*-------course-----*/
@@ -111,8 +114,10 @@ nav{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
-
+    margin-top: 100px;
+    background-color: #F2F2F2;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+    padding: 40px;
 }
 h1{
     font-size: 36px;
@@ -183,9 +188,15 @@ h3{
 
 .facilities{
     width:80%;
-    margin: auto;
+    
     text-align: center;
     padding-top: 100px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    margin-top: 70px;
+    margin-left: 80px;
+   
 
 
 }
@@ -220,6 +231,7 @@ h3{
     margin: auto;
     padding-top: 100px;
     text-align: center;
+    justify-content: space-between;
 
 }
 .testcol{
@@ -231,6 +243,10 @@ h3{
     padding: 25px;
     cursor: pointer;
     display: flex;
+    background-color: #F2F2F2;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    margin: 15px;
 }
 .testcol img{
     height: 40px;
@@ -249,22 +265,6 @@ h3{
 
 /*-----------call to action------*/
 
-.cta{
-    margin: 100px auto;
-    width: 80%;
-    background-image:url(1_20231018_152109_0000.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-
-}
-.cta h1{
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 0;
-}
 
 
   
@@ -634,10 +634,23 @@ width: 300%;}
     }
     
 
-        
+    .facilities{
+        margin-left: 20px;
+        width: 70%;
+    }
+    .course{
+        width: 70%;
+    }
     
     
+    .testimonials{
+        width: 90%;
+        margin: auto;
+        padding-top: 100px;
+        text-align: center;
+        justify-content: space-between;
     
+    }
 }
 
 
@@ -646,96 +659,3 @@ width: 300%;}
 /*---------- navigation*/
 
 
-:root{
-  --color-1: #0f1016;
-  --text-color: #f0f0f0;
-  --accent-color: #006aff;
-}
-*{
-  margin: 0;
-  padding: 0;
-}
-html{
-  
-  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
-}
-nav{
-  height: 60px;
-  background-color: transparent;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed; /* Fixed position */
-  top: 0; /* Position at the top of the viewport */
-  right: 0;
-  
-}
-.links-container{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-}
-nav a{
-  height: 100%;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--text-color);
-}
-nav a:hover{
-  background-color: var(--accent-color);
-}
-nav .home-link{
-  margin-right: auto;
-}
-nav svg{
-  fill: var(--text-color);
-}
-#sidebar-active{
-  display: none;
-}
-.open-sidebar-button, .close-sidebar-button{
-  display: none;
-}
-@media(max-width: 700px){
-  .links-container{
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: fixed;
-    top: 0;
-    right: -100%;
-    z-index: 10;
-    width: 300px;
-
-    background-color: #f44336;
-    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-    transition: 0.75s ease-out;
-  }
-  nav a{
-    box-sizing: border-box;
-    height: auto;
-    width: 400px;
-    padding: 20px 30px;
-    justify-content: flex-start;
-  }
-  .open-sidebar-button, .close-sidebar-button{
-    padding: 20px;
-    display: block;
-  }
-  #sidebar-active:checked ~ .links-container{
-    right: 0;
-  }
-  #sidebar-active:checked ~ #overlay{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
-  }
-}

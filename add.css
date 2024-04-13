@@ -1,0 +1,48 @@
+.container-news{
+    background-color: #172554;
+    height: 50vh;
+}
+.text-cont{
+    text-align: center;
+    color: #fff;
+}
+.text-cont h1{
+    font-size: 50px;
+    padding-top: 50px;
+    margin-top: 20px;
+
+}
+
+    
+.p-cont{
+    margin-top: 20px;
+   
+}
+.p-cont p{
+    font-size: 20px;
+    color: #e4dada;
+}
+
+.button-add{
+    text-align: center;
+}
+
+.btn-added{
+margin-top: 20px;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+
+padding: 10px 31px;
+font-size: 13px;
+background: #C2410C;
+position: relative;
+cursor: pointer;
+
+}
+.btn-added:hover{
+transform: scale(1.1);
+border: 1px solid #C2410C;
+background: transparent;
+transition: 1s;
+}

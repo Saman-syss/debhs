@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --color-1: #0f1016;
+        --text-color: #464444;
+        --accent-color: #006aff;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      html{
+        
+        font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+      }
+      .logo{
+        margin-right: 100px;
+      }
+      nav{
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed; /* Fixed position */
+        top: 0; /* Position at the top of the viewport */
+        
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+        
+      }
+      .links-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+         
+        
+      }
+      nav a{
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        
+      }
+      .navbar{
+          color: #172554;
+          margin-left: 60px;
+          margin-right: 25px;
+      }
+      .navbar.blue{
+      color: #006aff;    
+      }
+      
+      nav a:hover{
+        background-color: var(--accent-color);
+      }
+      nav .home-link{
+        margin-right: auto;
+      }
+      nav svg{
+        fill: var(--text-color);
+      }
+      #sidebar-active{
+        display: none;
+      }
+      .open-sidebar-button, .close-sidebar-button{
+        display: none;
+      }
+      @media(max-width: 700px){
+        .links-container{
+          flex-direction: column;
+          align-items: flex-start;
+      
+          position: fixed;
+          top: 0;
+          right: -100%;
+          z-index: 10;
+          width: 300px;
+      
+          background-color: #172554;
+          box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+          transition: 0.75s ease-out;
+        }
+        nav a{
+          box-sizing: border-box;
+          height: auto;
+          width: 400px;
+          padding: 20px 30px;
+          justify-content: flex-start;
+          
+        }
+        .navbar{color: #fff;}
+        .open-sidebar-button, .close-sidebar-button{
+          padding: 20px;
+          display: block;
+        }
+        #sidebar-active:checked ~ .links-container{
+          right: 0;
+        }
+        #sidebar-active:checked ~ #overlay{
+          height: 100%;
+          width: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 9;
+        }
+      }
+      h1{
+        margin-top: 100px;
+      }
+      
+</style>
+<body>
+    
+        
+        <nav>
+            <div class="logo"><img src="new_logo.png" alt="" width="200px"></div>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container" id="navbar">
+              <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+              </label>
+              
+              <!-- NOT IN TUTORIAL: The <a> tags are linked to the subpages -->
+              <a href="index.html" class="navbar">Home</a> 
+              <a href="about.html" class="navbar"  >About</a> 
+              <a href="main.html" class="navbar" >Resources</a>
+              <a href="news.html" class="navbar" >News</a>
+              <a href="news.html"  class="navbar">News</a>
+              <a href="contact.html" class="navbar" >Contact</a>
+            </div>
+            </div>
+        </nav>
+
+
+
+    <h1>tetx1</h1>
+    <p>lorem200</p>
+</body>
+</html>
