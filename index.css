@@ -270,13 +270,6 @@ h3{
   
 /*-----------     about section    ------*/
 .about{
-    height: 50vh;
-    width:100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Uni2.jpg);
-
-    background-position: center;
-    background-size: cover;
-
     color: #fff;
 }
 .about h1{
@@ -299,7 +292,9 @@ h3{
 
 }
 .coln img{
-    width: 100%;
+    width: 120%;
+    height: 70%;
+    margin-top: 110px;
 
 }
 .coln h1{
@@ -318,7 +313,33 @@ h3{
 .po:hover{
     color: #fff;
 }
-
+.feat-head{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    font-size: 25px;
+     color: #1E40AF;
+   
+}
+.feat-cont{
+    display: flex;
+    flex-basis: 31%;
+    justify-content: space-between;
+    
+}
+.feat-coln{
+    display: flex;
+    border: 1px;
+    max-width: fit-content;
+    padding-right: 10px;
+    
+}
+.feat-txt{
+    width: 300px;
+}
+.feat-img img{
+    width: 200px;
+}
 /*-------------------team{about us]------------*/
 
 
@@ -345,7 +366,7 @@ h3{
     width: 100%;
     position: relative;
     bottom: 0;
-    background: linear-gradient(to right,#00093c, #2d0b00);
+    background: linear-gradient(to right,#00093c, #172554);
     color: #fff;
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
