@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav-.css">
+
+</head>
+<body>
+    <section class="about" id="abt">
+        <nav>
+            <div class="logo"><img src="new_logo.png" alt="" width="200px"></div>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container" id="navbar">
+              <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+              </label>
+              
+              <!-- NOT IN TUTORIAL: The <a> tags are linked to the subpages -->
+              <a href="index.html" class="navbar">Home</a> 
+              <a href="about.html" class="navbar"  >About</a> 
+              <a href="main.html" class="navbar" >Resources</a>
+              <a href="news.html" class="navbar" >News</a>
+              <a href="news.html"  class="navbar">News</a>
+              <a href="contact.html" class="navbar" >Contact</a>
+            </div>
+            </div>
+        </nav>
+        
+            
+             
+                
+           
+        
+    
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="coln">
+                <h1>WHO ARE WE?</h1>
+                <P>Devdaha English Boarding High School located at the Devdaha Muncipality ward no.
+                     7 Pipaldanda is a secondary school running classes from playgroup to 10 .Established
+                      in 2053 Bs DEBHS has achieved many remarkable milestones in Academic as well as Extra
+                       Curricular Sector .Our mission is to produce ideal citizens for the nation .We are improving day
+                        by day , step by step to create a environment that 
+                    fosters the holistic development of our lovely students and allow their talent to shine in society.</P>
+                     <a href="#" class="btn po">EXPLORE NOW</a>
+            </div>
+            <div class="coln">
+                <img src="imgSchool.jpg">
+            </div>
+        </div>
+        <div class="feat">
+            <div class="feat-head">
+                <h2>OUR ACHIEVEMENTS</h2>
+
+            </div>
+            <div class="feat-cont">
+                <div class="feat-coln">
+                    <div class="feat-txt">
+                        <h3>District Topper - SEE 2075</h3>
+                        <p>Our student Gaurab  Khanal ranked 1st in Rupandehi District
+                            in SEE 2075.His dedication to study and
+                             achieve something and our effort to provdie him such environment made it possible . </p>
+                    </div>
+                    <div class="feat-img">
+                        <img src="gagan.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="feat-coln">
+                    <div class="feat-txt">
+                        <h3>Paschimanchal Topper - SLC 2064</h3>
+                        <p>Our 1st batch's student Gagan Kandel ranked 1st in Paschimanchal Region 
+                            in SLC 2064.His dedication to study and
+                             achieve something and our effort to provdie him such environment made it possible . </p>
+                    </div>
+                    <div class="feat-img">
+                        <img src="gagan.jpg" alt="">
+                    </div>
+                    
+                </div>
+                
+                    
+                </div>
+            <div class="feat-cont">
+                <div class="feat-coln">
+                    <div class="feat-txt">
+                        <h3>Runner up - Province level Dance contest</h3>
+                        <p>Our student Gaurab  Khanal ranked 1st in Rupandehi District
+                            in SEE 2075.His dedication to study and
+                             achieve something and our effort to provdie him such environment made it possible . </p>
+                    </div>
+                    <div class="feat-img">
+                        <img src="speech.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="feat-coln">
+                    <div class="feat-txt">
+                        <h3>2nd Runner up - Province level speech</h3>
+                        <p>Our 1st batch's student Gagan Kandel ranked 1st in Paschimanchal Region 
+                            in SLC 2064.His dedication to study and
+                             achieve something and our effort to provdie him such environment made it possible . </p>
+                    </div>
+                    <div class="feat-img">
+                        <img src="dance.jpg" alt="">
+                    </div>
+                    
+                </div>
+                
+                    
+                </div>
+                
+            </div>
+        </div>
+        <a href="#" class="btn po op">See More</a>
+    </section>
+    
+
+   
+        
+
+<!------  footer  ----->
+<section class="footer">
+
+    <div class="frow">
+        <div class="fcol">
+            <img src="logo.png" width="80px" >
+            <P>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sequi accusantium, beatae molestiae nisi, quam exercitationem dolore, 
+                cum ma</P>
+        </div>
+        <div class="fcol">
+            <h3>School</h3>
+            <p>EAST WEST HIGHWAY</p>
+            <p>Pipaldanda , Devdaha</p>
+            <P>Rupandehi, Nepal</P>
+            <p class="email"><a href="mailto:schooldevdaha@gmail.com">schooldevdaha@gmail.com</a></p>
+            <p><a href="tel:071-577407">071-577407</a></p>
+        </div>
+        <div class="fcol">
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Services</li>
+                <li><a href="#"></a>About us</li>
+                <li><a href="#"></a>Contacts</li>
+                <li><a href="#"></a>Nothng</li>
+
+        </ul>
+    </div>
+        <div class="fcol">
+            <h3>News letter</h3>
+            <form>
+                <input type="email" placeholder="Enter your email id" required>
+            </form>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
+
+
+
+
+

@@ -1,124 +1,97 @@
-:root{
-    --color-1: #0f1016;
-    --text-color: #464444;
-    --accent-color: #00defc;
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  
+
+}
+.sidebar{
+  background-color: #172554;
+}
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 60px;
+  z-index: 100;
+  width: 100%;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+ 
+}
+
+.logo{
+  width: 100%;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #172554;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #172554;
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 999;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+  color: #fff;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
   }
-  *{
-    margin: 0;
-    padding: 0;
+  .menu-button{
+    display: block;
   }
-  html{
+  li{
+    text-align: center;
     
-    font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+    padding: 10px;
   }
-  .logo{
-    margin-right: 100px;
-  }
-  nav{
-    height: 60px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed; /* Fixed position */
-    top: 0; /* Position at the top of the viewport */
-    
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
-    z-index: 999;
-    
-  }
-  .links-container{
-    height: 100%;
+  
+}
+@media(max-width: 400px){
+  .sidebar{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-     
-    
   }
-  nav a{
-    height: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    
-  }
-  .navbar{
-      color: #172554;
-      margin-left: 60px;
-      margin-right: 25px;
-  }
-  .navbar.blue{
-  color: #006aff;    
-  }
-  
-  nav a:hover{
-    background-color: var(--accent-color);
-  }
-  nav .home-link{
-    margin-right: auto;
-  }
-  nav svg{
-    fill: var(--text-color);
-  }
-  #sidebar-active{
-    display: none;
-  }
-  .open-sidebar-button, .close-sidebar-button{
-    display: none;
-  }
-  @media(max-width: 700px){
-    nav{
-        width: 100vw;
-    }
-    .links-container{
-      flex-direction: column;
-      align-items: flex-start;
-  
-      position: fixed;
-      top: 0;
-      right: -100%;
-      z-index: 10;
-      width: 300px;
-  
-      background-color: #172554;
-      box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-      transition: 0.75s ease-out;
-    }
-   
-    nav a{
-      box-sizing: border-box;
-      height: auto;
-      width: 400px;
-      padding: 20px 30px;
-      justify-content: flex-start;
-      
-    }
-    .navbar{color: #fff;}
-    .open-sidebar-button{
-       margin-left: 80px;
-        padding: 5px;
-        display: block;
-     
-    }
-    .close-sidebar-button{
-      padding: 20px;
-      display: block;
-    }
-    
-    #sidebar-active:checked ~ .links-container{
-      right: 0;
-    }
-    #sidebar-active:checked ~ #overlay{
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 100;
-    }
-  }
-  h1{
-    margin-top: 100px;
-  }
+}
+
+/* ----------------------------- slideshoiw ------------------------------*/
+
