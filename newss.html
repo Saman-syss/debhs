@@ -4,70 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container-news{
-            background-color: #172554;
-            height: 50vh;
-        }
-        .text-cont{
-            text-align: center;
-            color: #fff;
-        }
-        .text-cont h1{
-            font-size: 50px;
-            padding-top: 50px;
-            margin-top: 20px;
-
-        }
-        .text-cont p {
-            font-size: 20px;
-            color: #e4dada;
-        }
-        .button-add{
-            text-align: center;
-        }
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav-.css">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="news.css">
     
-    .btn{
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        
-        padding: 10px 31px;
-        font-size: 13px;
-        background: #C2410C;
-        position: relative;
-        cursor: pointer;
-
-    }
-    .btn:hover{
-        border: 1px solid #C2410C;
-        background: transparent;
-        transition: 1s;
-    }
-    .iframe-box{
-        margin: 50px;
-        background-color: #e4dada;        
-    }  
-    </style>
 
 </head>
 <body>
-    <div class="container-news">
-        <div class="text-cont">
-            <h1>ADMISSION ENQUIRY</h1>
-            <p>Are ready to jumpstart your career? <br></p>
-            <p>Dont miss your chance to register for playgroup to grade 9</p>
-        </div>
-        <div class="button-add">
-            <a href="#" class="btn">ENQUIRY NOW</a>
-        </div>
+    <section class="about" id="abt">
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="main.html">Resource</a></li>
+              <li><a href="newss.html">Updates</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li class="logo"><a href="#"><img src="new_logo.png" width="100px" alt="Notes"></a></li>
+              <li class="hideOnMobile"><a href="index.html">Home</a></li>
+              <li class="hideOnMobile"><a href="about.html">About</a></li>
+              <li class="hideOnMobile"><a href="main.html">Resource</a></li>
+              <li class="hideOnMobile"><a href="newss.html">Updates</a></li>
+              <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+        
+            
+             
+                
+           
+        
+    
+    </section>
 
+    <section>
+    <div class="my-blog-container">
+        <div class="my-blog-card">
+          <div class="my-blog-card__header">
+            <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="my-blog-card__image" width="600">
+          </div>
+          <div class="my-blog-card__body">
+            <span class="my-blog-tag my-blog-tag-blue">Technology</span>
+            <h4>What's new in 2022 Tech</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+          </div>
+          <div class="my-blog-card__footer">
+            <div class="my-blog-user">
+              <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="my-blog-user__image">
+              <div class="my-blog-user__info">
+                <h5>Jane Doe</h5>
+                <small>2h ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-blog-card">
+          <div class="my-blog-card__header">
+            <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="my-blog-card__image" width="600">
+          </div>
+          <div class="my-blog-card__body">
+            <span class="my-blog-tag my-blog-tag-brown">Food</span>
+            <h4>Delicious Food</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+          </div>
+          <div class="my-blog-card__footer">
+            <div class="my-blog-user">
+              <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="my-blog-user__image">
+              <div class="my-blog-user__info">
+                <h5>Jony Doe</h5>
+                <small>Yesterday</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-blog-card">
+          <div class="my-blog-card__header">
+            <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="my-blog-card__image" width="600">
+          </div>
+          <div class="my-blog-card__body">
+            <span class="my-blog-tag my-blog-tag-red">Automobile</span>
+            <h4>Race to your heart content</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+          </div>
+          <div class="my-blog-card__footer">
+            <div class="my-blog-user">
+              <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="my-blog-user__image">
+              <div class="my-blog-user__info">
+                <h5>John Doe</h5>
+                <small>2d ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!------  footer  ----->
+<section class="footer">
+
+    <div class="frow">
+        <div class="fcol">
+            <img src="logo.png" width="100px" >
+            
+            
+            <P>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sequi accusantium, beatae molestiae nisi, quam exercitationem dolore, 
+                cum ma</P>
+        </div>
+        <div class="fcol">
+            <h3>School</h3>
+            <p>EAST WEST HIGHWAY</p>
+            <p>Pipaldanda , Devdaha</p>
+            <P>Rupandehi, Nepal</P>
+            <p class="email"><a href="mailto:schooldevdaha@gmail.com">schooldevdaha@gmail.com</a></p>
+            <p><a href="tel:071-577407">071-577407</a></p>
+        </div>
+        <div class="fcol">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ECA.html">ECA</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+        </ul>
     </div>
-    <div class="iframe-box">
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSchool.Devdaha%2Fposts%2Fpfbid02U2inhtG45Sipye6y8LvYcMZuAVXMxVC9E8RYcKLX3W63abqxqBd9N3DFJ5g6J7ZZl&show_text=true&width=500" width="400" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdevdahaschool%2Fposts%2Fpfbid02Dj3yYDYDFrP5HjJij1ayV5UfhRuetiSXk3QXHsFTiKvnvYxcDF8hB5Z4bBXuT4uQl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdevdahaschool%2Fposts%2Fpfbid03grVH1wqYudR77PCZhCM6NJyvUjTGPynEoGzdMkwG1Hj64LrHesDiKQCdfkYcxaxl&show_text=true&width=500" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdevdahaschool%2Fposts%2Fpfbid0CiQaSc9Q9vEMDbJLULVNirx5SwWvugXwLG11ubkJx734VTgDrheptpmT6tdPtDESl&show_text=true&width=500" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-</div>
+        <div class="fcol">
+            <h3>News letter</h3>
+            <form>
+                <input type="email" placeholder="someone@gmail.com" required>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+    <script src="navJS.js"></script>
 </body>
 </html>
