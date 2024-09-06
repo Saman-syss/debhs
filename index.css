@@ -183,7 +183,12 @@ h3{
     text-align: left;
 }
 
+/* principal  */
 
+
+#msg{
+    margin: 100px;
+}
 /*-----------testimonilas------*/
 
 .testimonials{
@@ -199,11 +204,11 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #FFF3F2;
+   
     padding: 25px;
     cursor: pointer;
     display: flex;
-    background-color: #F2F2F2;
+    background-color: #fff;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
     padding: 40px;
     margin: 15px;
@@ -307,6 +312,38 @@ h3{
 .op{
     text-align: center;
 }
+
+
+.our-team h1{
+    text-align: center;
+    color: #1E40AF;
+}
+.team-container{
+    margin: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+   
+
+}
+.team-box{
+   
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+    width: 300px;
+    transition: 0.4s;
+}
+.team-box img{
+    width: 300px;
+}
+.team-box h2{
+    color: #1E40AF;
+}
+.team-box:hover{
+    background-color: #fff;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25); 
+}
 /*-------------------team{about us]------------*/
 
 
@@ -393,32 +430,7 @@ h3{
 
 
 
-/*-------------------- contact --------------------*/
 
-.cont{
-    
-    height: 50vh;
-
-    align-items: center;
-
-}
-.cont h1{
-    text-align: center;
-    padding: 50px;
-
-}
-.cont img{
-    align-items: center;
-    padding: 10px;
-    margin-left: 100px;
-
-
-
-}
-.cont p{
-    text-align: center;
-    
-}
 
 
 /*----------------------------- library---------------------------*/
@@ -560,6 +572,9 @@ h3{
     text-align: center;
     margin-left: 170px;
 }
+
+
+
 /*----------------*/
 @media(max-width: 700px){
     /* main index page */
@@ -667,6 +682,135 @@ h3{
 
 
 
-/*---------- navigation*/
+/* contact-form */
+.contact{
+   
+    display: flex;
+    height: 100vh !important;
+    justify-content: space-around;
+   
+
+ 
+ }
+ .cont-form-img{
+    margin-top: 10vh;
+    width: 100px;
+    height: 500px;
+ }
+.cont-body{
+background:white;
+width: 50vw;
+height: 80vh;
+margin: auto;
+
+margin-bottom: 4vh;
+margin-top: 10vh;
+
+}
 
 
+
+
+
+
+.contact h1{
+padding-top: 2vh !important;
+/* border: 1px solid black; */
+text-align: center !important;  
+}
+
+.contact form{
+    display: flex !important;
+     flex-direction: column !important;
+    /* border: 2px solid red; */
+    width: 100% !important;
+    height: 55vh !important;
+    justify-content: space-around !important;
+    padding-right: 20px !important;
+}
+
+/* #contf
+{
+ 
+} */
+#follow{
+    text-align: center !important;
+    margin-top: 20px !important;
+    color: #333 !important;
+}
+.icons{
+    margin-top: 10px !important;
+    text-align: center !important;
+    margin-right: 5px !important;
+}
+.icons a{
+    color: black !important;
+}
+.fa-brands,.fa-regular,.fa-solid {
+    margin-right: 20px !important;
+   
+}
+#send{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    max-width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.5s;
+    border: 2px solid black;
+}
+#send:hover{
+    background-color: white;
+    color: black;
+}
+
+/* admissoisn */
+.container-news{
+    background-color: #172554;
+    height: 50vh;
+}
+.text-cont{
+    text-align: center;
+    color: #fff;
+}
+.text-cont h1{
+    font-size: 50px;
+    padding-top: 50px;
+    margin-top: 0px;
+
+}
+
+    
+.p-cont{
+    margin-top: 20px;
+   
+}
+.p-cont p{
+    font-size: 20px;
+    color: #e4dada;
+}
+
+.button-add{
+    text-align: center;
+}
+
+.btn-added{
+margin-top: 20px;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+
+padding: 10px 31px;
+font-size: 13px;
+background: #C2410C;
+position: relative;
+cursor: pointer;
+
+}
+.btn-added:hover{
+transform: scale(1.1);
+border: 1px solid #C2410C;
+background: transparent;
+transition: 1s;
+}

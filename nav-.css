@@ -2,11 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body{
-  min-height: 100vh;
-  
 
-}
 .sidebar{
   background-color: #172554;
 }
@@ -47,6 +43,11 @@ nav a:hover{
 nav li:first-child{
   margin-right: auto;
 }
+
+  
+
+
+
 .sidebar{
   position: fixed;
   top: 0; 
